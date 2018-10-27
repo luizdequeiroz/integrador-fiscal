@@ -1,0 +1,6 @@
+c:\users\1007787\documents\visual studio 2015\Projects\EmissorMFE\EmissorMFE\bin\Debug\IntegradorMFE.dll
+c:\users\1007787\documents\visual studio 2015\Projects\EmissorMFE\EmissorMFE\bin\Debug\IntegradorMFE.pdb
+c:\users\1007787\documents\visual studio 2015\Projects\EmissorMFE\EmissorMFE\obj\Debug\IntegradorMFE.csprojResolveAssemblyReference.cache
+c:\users\1007787\documents\visual studio 2015\Projects\EmissorMFE\EmissorMFE\obj\Debug\IntegradorMFE.dll
+c:\users\1007787\documents\visual studio 2015\Projects\EmissorMFE\EmissorMFE\obj\Debug\IntegradorMFE.pdb
+c:\users\1007787\documents\visual studio 2015\Projects\EmissorMFE\EmissorMFE\bin\Debug\IntegradorMFE.tlb
