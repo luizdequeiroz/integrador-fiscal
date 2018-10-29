@@ -1,0 +1,6 @@
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\IntegradorFiscal\bin\Debug\IntegradorFiscal.dll
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\IntegradorFiscal\bin\Debug\IntegradorFiscal.pdb
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\IntegradorFiscal\bin\Debug\IntegradorFiscal.tlb
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\IntegradorFiscal\obj\Debug\IntegradorFiscal.csprojResolveAssemblyReference.cache
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\IntegradorFiscal\obj\Debug\IntegradorFiscal.dll
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\IntegradorFiscal\obj\Debug\IntegradorFiscal.pdb

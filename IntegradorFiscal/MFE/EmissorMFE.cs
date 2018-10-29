@@ -2,6 +2,9 @@
 using System;
 using IntegradorFiscal.Functions;
 using IntegradorFiscal.MFE.SEFAZ;
+using System.Diagnostics;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace IntegradorFiscal.MFE
 {
@@ -36,6 +39,11 @@ namespace IntegradorFiscal.MFE
             DiretorioDoInput = diretorioDoInput;
         }
 
+        public void ConfigurarDiretorioDoOutput(string diretorioDoOutput)
+        {
+            DiretorioDoOutput = diretorioDoOutput;
+        }
+
         public void Emitente(string CNPJ, string IE, string indRatISSQN = "N")
         {
             CFe.infCFe.emit = new emit
@@ -46,10 +54,12 @@ namespace IntegradorFiscal.MFE
             };
         }
 
-        public bool Emitir()
+        public dynamic Emitir()
         {
             if (DateTime.Now <= new DateTime(2018, 10, 31))
             {
+                ThreadTask.IniciarThread(() => IntegradorSEFAZ.MonitorarOutput(DiretorioDoOutput));
+
                 var xmlCFe = CFe.Serialize();
 
                 xmlCFe = xmlCFe.Replace("nItem=\"01\"", "nItem=\"1\"").Replace("nItem=\"02\"", "nItem=\"2\"").Replace("nItem=\"03\"", "nItem=\"3\"")
@@ -62,13 +72,19 @@ namespace IntegradorFiscal.MFE
 
                 var xmlIntegrador = xmlCFe.GerarVendaViaIntegrador(id);
                 xmlIntegrador.Write(DiretorioDoInput + "\\Venda_" + CodigoDaFilial + CFe.infCFe.ide.numeroCaixa + id + ".xml");
+
+                dynamic retorno = null;
+                do
+                {
+                    retorno = RetornosProcessados.Where(rp => rp.Sessao == id).FirstOrDefault();
+                } while (retorno == null);
+
+                return retorno;
             }
             else
             {
                 throw new Exception("O uso da biblioteca de emissão expirou!");
             }
-
-            return true;
         }
     }
 }

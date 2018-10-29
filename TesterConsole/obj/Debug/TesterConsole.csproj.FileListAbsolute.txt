@@ -1,0 +1,8 @@
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\bin\Debug\TesterConsole.exe.config
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\obj\Debug\TesterConsole.exe
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\obj\Debug\TesterConsole.pdb
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\bin\Debug\TesterConsole.exe
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\bin\Debug\TesterConsole.pdb
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\bin\Debug\IntegradorFiscal.dll
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\bin\Debug\IntegradorFiscal.pdb
+C:\Users\61100.PMENOS.COM.BR\Documents\integradorfiscal\TesterConsole\obj\Debug\TesterConsole.csprojResolveAssemblyReference.cache

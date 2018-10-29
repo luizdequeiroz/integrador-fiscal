@@ -25,5 +25,17 @@ namespace IntegradorFiscal.Functions
                 return str;
             }
         }
+
+        public static void MoveFile(this FileInfo file, string path)
+        {
+            FileInfo fi = new FileInfo(path);
+            if (!fi.Directory.Exists)
+                Directory.CreateDirectory(fi.DirectoryName);
+
+            if (File.Exists(path))
+                File.Delete(path);
+
+            file.MoveTo(path);
+        }
     }
 }

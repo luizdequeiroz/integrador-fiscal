@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Functions\IdSessao.cs" />
+    <Compile Include="Functions\ThreadTask.cs" />
     <Compile Include="MFE\EmissorMFE.cs" />
     <Compile Include="Functions\Archive.cs" />
     <Compile Include="Global.cs" />
